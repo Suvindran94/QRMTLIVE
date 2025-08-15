@@ -1,0 +1,448 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.grey-bg {
+    padding: 15px;
+    font-size: 22px;
+    background: #dbdfe5;
+    margin-bottom: 15px;
+    height: 120px;
+}
+
+.grey-bg-lg {
+    padding: 15px;
+    font-size: 22px;
+    background: #dbdfe5;
+    margin-bottom: 15px;
+    height: 220px;
+}
+
+.grey-bg.bg-alt {
+    background: #abb1b8;
+}
+
+b {
+    color: blue;
+}
+
+#liveDateTime {
+    margin: 0 auto;
+    font-size: 24px;
+    position: relative;
+}
+
+#date {
+    font-weight: bolder;
+    text-align: left;
+    font-size: 30px;
+}
+
+
+
+.user-icon {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    color: grey;
+}
+
+.user-icon-active {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    color: mediumseagreen;
+    font-weight: 600;
+}
+
+.user-icon i {
+    display: block;
+    font-size: 35px;
+    /* Adjust the font size as needed */
+    text-transform: uppercase;
+}
+
+.user-icon-active i {
+    display: block;
+    font-size: 35px;
+    /* Adjust the font size as needed */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.user-name {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    /* Adjust the font size as needed */
+
+}
+
+.fa-repeat {
+    font-weight: 600;
+}
+
+.tableinfo {
+    width: 100%;
+    font-size: 18px;
+}
+
+.table-primary {
+    width: 40%;
+}
+
+
+
+#progress-bar {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 15px 15px 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#progress-bar li {
+    list-style-type: none;
+    display: table-cell;
+    width: 15%;
+    float: left;
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+}
+
+#progress-bar li.step-active:before {
+    z-index: 99999 !important;
+
+}
+
+#progress-bar li:before {
+    width: 100px;
+    height: 100px;
+    color: #212121;
+    content: "";
+    line-height: 50px;
+    font-size: 18px;
+    border: 1px solid #efefef;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#progress-bar li#step1:before {
+    background-image: url('../../OPRUPD/printer.png') !important;
+    background-size: 50px 50px !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+#progress-bar li#step2:before {
+    background-image: url('../../OPRUPD/weight-scale.png') !important;
+    background-size: 50px 50px !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+#progress-bar li#step3:before {
+    background-image: url('../../OPRUPD/seal.png') !important;
+    background-size: 70px 70px !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+#progress-bar li#step4:before {
+    background-image: url('../../OPRUPD/qr-code.png') !important;
+    background-size: 60px 60px !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+#progress-bar li#step5:before {
+    background-image: url('../../OPRUPD/seal.png') !important;
+    background-size: 70px 70px !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+#progress-bar li#step6:before {
+    background-image: url('../../OPRUPD/qr-code.png') !important;
+    background-size: 60px 60px !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+#progress-bar li#step6:before {
+    background-image: url('../../OPRUPD/qr-code.png') !important;
+    background-size: 70px 70px !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+
+
+
+
+#progress-bar li:after {
+    width: 100%;
+    height: 10px;
+    content: "";
+    position: absolute;
+    background-color: grey;
+    top: 45px;
+    left: -50%;
+    z-index: -1;
+}
+
+#progress-bar li:first-child:after {
+    content: none;
+}
+
+#progress-bar li.step-skip {
+    color: grey;
+}
+
+#progress-bar li.step-skip:before {
+    border-color: grey;
+    border-width: 5px;
+    background-color: grey;
+    color: grey;
+
+    font-family: "FontAwesome";
+}
+
+#progress-bar li.step-skip+li:after {
+    background-color: grey !important;
+}
+
+
+
+
+#progress-bar li.step-done {
+    color: #25de00;
+    font-weight: bolder;
+}
+
+#progress-bar li.step-done:before {
+    border-color: #25de00;
+    border-width: 5px;
+    background-color: #25de00;
+    color: #fff;
+
+    font-family: "FontAwesome";
+}
+
+
+#progress-bar li.step-done+li:after {
+    background-color: #25de00 !important;
+}
+
+
+#progress-bar li.step-todo {
+    color: #7d7d7d;
+    font-weight: bolder;
+}
+
+#progress-bar li.step-todo:before {
+    border-color: #7d7d7d;
+    border-width: 5px;
+    background-color: #7d7d7d;
+    color: #fff;
+    font-family: "FontAwesome";
+}
+
+#progress-bar li.step-todo+li:after {
+    background-color: #7d7d7d !important;
+}
+
+
+
+#progress-bar li.step-active {
+    color: #00caf7;
+    font-weight: bolder;
+}
+
+#progress-bar li.step-active:before {
+    border-color: #00caf7;
+    border-width: 5px;
+    background-color: #00caf7;
+    color: blue;
+    font-weight: 700;
+}
+
+.instruction {
+    text-align: center;
+    padding: 10px;
+    font-size: 70px;
+    animation: blink 1s infinite;
+    /* Adjust the animation duration as needed */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.outputweight {
+    text-align: center;
+    padding: 5px;
+    color: red;
+    font-size: 250px;
+}
+
+.tinytext {
+    font-size: 50px;
+    color: black;
+}
+
+.container-fluid {
+    margin-top: 20px;
+}
+
+
+#point {
+    position: relative;
+    -moz-animation: mymove 1s ease infinite;
+    -webkit-animation: mymove 1s ease infinite;
+    color: black;
+}
+
+#point {
+    position: relative;
+    -moz-animation: mymove 1s ease infinite;
+    -webkit-animation: mymove 1s ease infinite;
+    color: black;
+}
+
+/* Simple <a href="https://www.jqueryscript.net/animation/">Animation</a> */
+@-webkit-keyframes mymove {
+    0% {
+        opacity: 1.0;
+        text-shadow: 0 0 20px grey;
+    }
+
+    50% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    100% {
+        opacity: 1.0;
+        text-shadow: 0 0 20px grey;
+    }
+}
+
+.time {
+
+    color: black;
+
+    text-align: center;
+    width: auto;
+    margin-top: -22px;
+
+}
+
+.h {
+    font-size: 40pt;
+    font-weight: 500;
+
+}
+
+.m {
+    font-size: 40pt;
+    font-weight: 500;
+}
+
+.s {
+    font-size: 40pt;
+    font-weight: 500;
+}
+
+.point {
+    font-size: 40pt;
+    font-weight: 500;
+}
+
+.ampm {
+    font-size: 14pt;
+    font-weight: 500;
+    color: orange;
+}
+
+.date {
+    font-size: 20pt;
+    font-weight: 500;
+    color: #1aa3ff;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    z-index: 999999999;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.cv-spinner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px #ddd solid;
+    border-top: 4px #2e93e6 solid;
+    border-radius: 50%;
+    animation: sp-anime 0.8s infinite linear;
+}
+
+@keyframes sp-anime {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.is-hide {
+    display: none;
+}
+
+#progress-bar li.step-pending {
+    color: red;
+}
+
+#progress-bar li.step-pending:before {
+    border-color: red;
+    border-width: 5px;
+    background-color: red;
+    color: red;
+
+    font-family: "FontAwesome";
+}
+
+#progress-bar li.step-pending+li:after {
+    background-color: red !important;
+}
